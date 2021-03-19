@@ -25,3 +25,11 @@ def test_parse_add():
 
     assert action.name == "add"
     assert action.description == "first task"
+    def test_parse_add():
+        command = "+ first task"
+    task_manager = TaskManager()
+
+    action = task_manager.parse(command)
+
+    assert action.name == "add"
+    assert action.description == "first task"
